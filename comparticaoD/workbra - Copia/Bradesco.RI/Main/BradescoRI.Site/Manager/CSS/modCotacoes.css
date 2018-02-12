@@ -1,0 +1,36 @@
+﻿body {
+}
+
+.labelDown {
+    padding-right: 10px;
+    color: #f00;
+}
+
+.labelUp {
+    padding-right: 10px;
+    color: #090;
+}
+
+.tableDefault { border-bottom: 1px solid #CC092F; }
+.tableDefault th,
+.tableDefault td { padding: 7px 10px; text-align: center; }
+.tableDefault th { background: #EAEBEC; border-bottom: 1px solid #CC092F; border-right: 1px solid #fff; }
+.tableDefault  .headAlt th { border-top: 1px solid #CC092F; font-weight: normal; }
+.tableDefault th span {font-weight:normal;}
+.tableDefault .lineWhite {border-bottom: 1px solid #FFF;}
+.tableDefault td { border-right: 1px solid #E1E2E3; }
+.tableDefault .txtALft { text-align: left; }
+.tableDefault .colLft { text-align: left; }
+.tableDefault .colRgt { border-right: 0; padding: 7px; }
+.tableDefault .even td { background: #F8F8F8; }
+.tableDefault .total td {background: #F8F8F8;font-weight:bold;}
+.tableDefault .lnkItem { float: left; margin-right: 15px; text-decoration: underline; color: #333; }
+.tbLegenda { font-size: 0.91em; }
+
+.tbInfo { font-size: 0.91em; line-height: 160%; }
+
+.lineRed {border-top: 1px solid #CC092F;}
+
+.clr { float: none !important; clear: both; height: 0 !important; overflow: hidden !important; }
+
+.mt20 { margin-top: 20px; }

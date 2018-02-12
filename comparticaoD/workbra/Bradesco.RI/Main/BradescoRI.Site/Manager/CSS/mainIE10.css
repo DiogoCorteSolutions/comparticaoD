@@ -1,0 +1,51 @@
+    .fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
+        display:inline-block;
+        width:25em;
+    }
+
+    .fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
+        display:inline-block;
+        width:40em;
+    }
+
+    .prospect-tabs-conteudo {
+        margin:.5em 0 0 0;
+    }
+
+    .prospect-tabs a{
+    width:auto;
+    padding:.5em 1em;
+    margin: 0 -.5em 0 0;
+    background:#ccc;
+    border:solid 1px #999;
+    border-bottom:none;
+    text-decoration:none;
+    color:#000;
+    }
+
+    
+
+    html[data-useragent*='MSIE 10.0'].fields > label, .fields > fieldset > label, .fields > div > label, .fields > div, .fields > fieldset > div, .fields > div > div {
+        display:inline-block;
+        width:25em;
+    }
+
+    html[data-useragent*='MSIE 10.0'].fields-edit > label, .fields-edit > fieldset > label, .fields-edit > div > label, .fields-edit > div, .fields-edit > fieldset > div, .fields-edit > div > div {
+        display:inline-block;
+        width:40em;
+    }
+
+    html[data-useragent*='MSIE 10.0'].prospect-tabs-conteudo {
+        margin:.5em 0 0 0;
+    }
+
+    html[data-useragent*='MSIE 10.0'].prospect-tabs a{
+    width:auto;
+    padding:.5em 1em;
+    margin: 0 -.5em 0 0;
+    background:#ccc;
+    border:solid 1px #999;
+    border-bottom:none;
+    text-decoration:none;
+    color:#000;
+    }

@@ -1,0 +1,106 @@
+/*
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This is the default CSS file used by the editor area. It defines the
+ * initial font of the editor and background color.
+ *
+ * A user can configure the editor to use another CSS file. Just change
+ * the value of the FCKConfig.EditorAreaCSS key in the configuration
+ * file.
+ */
+
+/**
+ * The "body" styles should match your editor web site, mainly regarding
+ * background color and font family and size.
+ */
+
+
+body, h1, form, fieldset, li, ul, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, hr, iframe{margin:0;padding:0; }
+
+
+body
+{
+	background-color: #ffffff;
+	padding: padding:15px;;
+	margin: 0px;
+	
+}
+
+body, td
+{
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+}
+
+a[href]
+{
+	color: -moz-hyperlinktext !important;		/* For Firefox... mark as important, otherwise it becomes black */
+	text-decoration: -moz-anchor-decoration;	/* For Firefox 3, otherwise no underline will be used */
+}
+
+
+
+.Bold
+{
+	font-weight: bold;
+}
+
+.Title
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: #cc3300;
+}
+
+.Code
+{
+	border: #8b4513 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #000066;
+	font-family: 'Courier New' , Monospace;
+	background-color: #ff9933;
+}
+
+
+h2{font-size:1.18em;color:#C31010;margin:10px 0 5px;}
+.img{float:left;margin:0 15px 15px 0;border:1px solid #CFCFCF !important;}
+p{margin-bottom:15px;line-height:140%;}
+p a{color:#333;text-decoration:underline;}
+.link,.contDefault .leg{font-size:.9em;text-decoration:none;}
+.leg:hover{text-decoration:undeline !important;}
+
+
+a {color:#666; text-decoration:none;}
+a:hover {text-decoration:underline}
+
+ul , ol  {padding:0; margin:0}
+ul li {list-style:inherit!important}
+
+.FCK__ShowTableBorders{padding:0;margin:0;border:0;font-size:11px!important;}
+.FCK__ShowTableBorders * {border:0!important}
+.FCK__ShowTableBorders td.last{border-right:0}
+.FCK__ShowTableBorders thead tr th{background:#EAEBEC;border-right:1px solid #fff!important;border-top:1px solid #fff!important;padding:10px; font-size:11px; border-bottom:0}
+.FCK__ShowTableBorders thead tr.redLine td{border-bottom:1px solid #CC092F;}
+.FCK__ShowTableBorders tbody tr td{padding:10px;border-right:1px solid #E1E2E3!important; border-bottom:1px solid #E1E1E1!important;font-size:11px!important;}
+.FCK__ShowTableBorders tbody tr.alt td{background:#F8F8F8}
+.FCK__ShowTableBorders tbody .redLine td{height:1px;background:#CC092F;padding:0}
+
+

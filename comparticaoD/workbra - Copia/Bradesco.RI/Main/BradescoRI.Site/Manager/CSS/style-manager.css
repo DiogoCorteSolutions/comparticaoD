@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+.moduloSemConteudo{
+    margin-top:10px;
+    margin-bottom:10px;
+    width:50%;
+    height:60px;
+    display:block;
+    border:1px dashed;
+    color:gray;
+}
+/*Criado por Gustavo Basile - 23/08/2017*/
+.edit-modulos {
+    margin: 15px;
+    padding: 10px 10px 10px 20%;
+    background-color: #e5edf3;
+}
+.btnsEditar {
+    background-color: #337ab7;
+    padding: 5px 15px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 10px;
+    border: 1px solid #808080;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.container-modulos {
+    border: solid 2px #e5edf3;
+    padding: 10px;
+}
+.menu-modulos {
+    margin-bottom: 20px;
+    background-color: #e5edf3;
+    padding: 15px;
+    border-bottom: solid 2px #e5edf3;
+}
+.menu-modulos span#lblAlias, span#lblTitulo, span#lblMetaTags {
+    margin-right: 10px;
+}
+.menu-modulos #btnAdicionar, #btnSalvar, #btnPreview {
+    background-color: #cc092f;
+    padding: 5px 15px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0 10px;
+    border: 1px solid #808080;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#divConfiguracoes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu-modulos-metas {
+    background-color: azure;
+}

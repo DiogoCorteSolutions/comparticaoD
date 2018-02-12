@@ -1,0 +1,1 @@
+﻿document.write( FCKTools.GetStyleHtml( GetCommonDialogCss() ) ) ;
