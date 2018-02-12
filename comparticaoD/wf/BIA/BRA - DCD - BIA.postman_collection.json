@@ -1,0 +1,467 @@
+{
+	"variables": [],
+	"info": {
+		"name": "BRA | DCD | BIA",
+		"_postman_id": "673d6bfe-cfc2-fb0c-186f-543c52a889ca",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Direcionamento/GetMessage",
+			"request": {
+				"url": {
+					"raw": "{{url-bia}}/wsChatWatson/api/Direcionamento/GetMessage?taxonomia=canais_teste",
+					"host": [
+						"{{url-bia}}"
+					],
+					"path": [
+						"wsChatWatson",
+						"api",
+						"Direcionamento",
+						"GetMessage"
+					],
+					"query": [
+						{
+							"key": "taxonomia",
+							"value": "canais_teste",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "cod",
+							"value": "777",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "empresa",
+							"value": "ORBIUM",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Empresa\":\"ORBIUM\",\n\t\"IdCall\":2958234\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Conversation/Ask",
+			"request": {
+				"url": "{{url-wspf}}/Watson/wsChatWatson/api/Conversation/Ask",
+				"method": "POST",
+				"header": [
+					{
+						"key": "uuid",
+						"value": "xyz1",
+						"description": ""
+					},
+					{
+						"key": "platform",
+						"value": "xyz2",
+						"description": ""
+					},
+					{
+						"key": "segment",
+						"value": "xyz3",
+						"description": ""
+					},
+					{
+						"key": "agency",
+						"value": "xyz4",
+						"description": ""
+					},
+					{
+						"key": "account",
+						"value": "xyz5",
+						"description": ""
+					},
+					{
+						"key": "titularity",
+						"value": "xyz7",
+						"description": ""
+					},
+					{
+						"key": "digit",
+						"value": "xyz6",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"alternate_intents\": true,\n    \"input\": {\n    \t\"text\": \"financiamento\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Conversation/Get",
+			"request": {
+				"url": "{{url-bia}}/wsChatWatson/api/Conversation/Get",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Conversation/CheckAvailability",
+			"request": {
+				"url": "{{url-bia}}/wsChatWatson/api/Conversation/CheckAvailability",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chat/PersistCall",
+			"request": {
+				"url": "{{url-bia}}/wsChatWatson/api/Chat/PersistCall",
+				"method": "POST",
+				"header": [
+					{
+						"key": "uuid",
+						"value": "2E994E74-8A23-4B17-AD40-33EDF32B5AC0",
+						"description": ""
+					},
+					{
+						"key": "platform",
+						"value": "IOS",
+						"description": ""
+					},
+					{
+						"key": "segment",
+						"value": "Classic",
+						"description": ""
+					},
+					{
+						"key": "agency",
+						"value": "93",
+						"description": ""
+					},
+					{
+						"key": "account",
+						"value": "601030",
+						"description": ""
+					},
+					{
+						"key": "titularity",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "digit",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "conversationID",
+						"value": "1d5e584c-d2fd-431e-9ec1-57a0674cf146",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Empresa\":\"ORBIUM\",\n\t\"IDCall\":2958234,\n\t\"IDTalk\":0 \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chat/PersistQueue",
+			"request": {
+				"url": "{{url-bia}}/wsChatWatson/api/Chat/PersistQueue",
+				"method": "POST",
+				"header": [
+					{
+						"key": "uuid",
+						"value": "2E994E74-8A23-4B17-AD40-33EDF32B5AC0",
+						"description": ""
+					},
+					{
+						"key": "platform",
+						"value": "IOS",
+						"description": ""
+					},
+					{
+						"key": "segment",
+						"value": "Classic",
+						"description": ""
+					},
+					{
+						"key": "agency",
+						"value": "93",
+						"description": ""
+					},
+					{
+						"key": "account",
+						"value": "601030",
+						"description": ""
+					},
+					{
+						"key": "titularity",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "digit",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "conversationID",
+						"value": "1d5e584c-d2fd-431e-9ec1-57a0674cf146",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Empresa\":\"ORBIUM\",\n\t\"IdQueue\":2689105\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chat/SendMessage",
+			"request": {
+				"url": "{{url-bia}}/wsChatWatson/api/Chat/SendMessage",
+				"method": "POST",
+				"header": [
+					{
+						"key": "uuid",
+						"value": "2E994E74-8A23-4B17-AD40-33EDF32B5AC0",
+						"description": ""
+					},
+					{
+						"key": "platform",
+						"value": "IOS",
+						"description": ""
+					},
+					{
+						"key": "segment",
+						"value": "Classic",
+						"description": ""
+					},
+					{
+						"key": "agency",
+						"value": "93",
+						"description": ""
+					},
+					{
+						"key": "account",
+						"value": "601030",
+						"description": ""
+					},
+					{
+						"key": "titularity",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "digit",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "conversationID",
+						"value": "1d5e584c-d2fd-431e-9ec1-57a0674cf146",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Empresa\":\"ORBIUM\",\n\t\"IDCall\":2958234,\n\t\"Message\":\"Olá teste 1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chat/StartCall",
+			"request": {
+				"url": "{{url-bia}}/wsChatWatson/api/Chat/StartCall",
+				"method": "POST",
+				"header": [
+					{
+						"key": "uuid",
+						"value": "2E994E74-8A23-4B17-AD40-33EDF32B5AC0",
+						"description": ""
+					},
+					{
+						"key": "platform",
+						"value": "IOS",
+						"description": ""
+					},
+					{
+						"key": "segment",
+						"value": "Classic",
+						"description": ""
+					},
+					{
+						"key": "agency",
+						"value": "93",
+						"description": ""
+					},
+					{
+						"key": "account",
+						"value": "601030",
+						"description": ""
+					},
+					{
+						"key": "titularity",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "digit",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "conversationID",
+						"value": "1d5e584c-d2fd-431e-9ec1-57a0674cf146",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"empresa\":\"ORBIUM\",\n  \"taxonomia\":\"canais\",\n  \"Historico\": [\n  \t{\n  \t\t\"bia\": \"Olá\"\n  \t},\n  \t{\n  \t\t\"user\": \"Oie\"\n  \t}\n  ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chat/EndCall",
+			"request": {
+				"url": "{{url-bia}}/wsChatWatson/api/Chat/EndCall",
+				"method": "POST",
+				"header": [
+					{
+						"key": "uuid",
+						"value": "2E994E74-8A23-4B17-AD40-33EDF32B5AC0",
+						"description": ""
+					},
+					{
+						"key": "platform",
+						"value": "IOS",
+						"description": ""
+					},
+					{
+						"key": "segment",
+						"value": "Classic",
+						"description": ""
+					},
+					{
+						"key": "agency",
+						"value": "93",
+						"description": ""
+					},
+					{
+						"key": "account",
+						"value": "601030",
+						"description": ""
+					},
+					{
+						"key": "titularity",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "digit",
+						"value": "0",
+						"description": ""
+					},
+					{
+						"key": "conversationID",
+						"value": "1d5e584c-d2fd-431e-9ec1-57a0674cf146",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Empresa\":\"ORBIUM\",\n\t\"IdCall\":2958234\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "WatsonRepositorio/Ask",
+			"request": {
+				"url": "{{url-bia}}/WatsonRepositorio/api/Ask",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "WatsonRepositorio/Direcionamento",
+			"request": {
+				"url": "{{url-bia}}/WatsonRepositorio/api/Direcionamento",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Taxonomia\": \"financiamento\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
